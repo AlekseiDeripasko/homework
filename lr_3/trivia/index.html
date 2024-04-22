@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function(){
+            let arr = document.querySelectorAll('.incorrect');
+            for (const i of arr){
+                i.addEventListener('click', function(){
+                   i.style.backgroundColor = 'red';
+                   document.querySelector('.answer').innerHTML = 'Incorrect';
+                });
+            }
+
+            let correct_answer = document.querySelector('.correct');
+            correct_answer.addEventListener('click', function(){
+                   correct_answer.style.backgroundColor = 'green';
+                   document.querySelector('.answer').innerHTML = 'Correct';
+                });
+
+            document.querySelector('.check').addEventListener('click', function(){
+                if (document.querySelector('.input_space').value == "1234"){
+                    document.querySelector('.input_space').style.backgroundColor = 'green';
+                    document.querySelector('.second_answer').innerHTML = 'Correct';
+                }
+                else{
+                    document.querySelector('.input_space').style.backgroundColor = 'red';
+                    document.querySelector('.second_answer').innerHTML = 'Incorrect';
+                }
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is the probability of a successful defence of this task?</h3>
+
+                <button class = "correct">0%</button>
+                <button class = "incorrect">20%</button>
+                <button class = "incorrect">40%</button>
+                <button class = "incorrect">60%</button>
+                <button class = "incorrect">80%</button>
+                <button class = "incorrect">100%</button>
+
+                <p style="font-weight: bold;" class="answer"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>In what year did the son of the Holy Roman Emperor Frederick II, Henry VII, rebel against his father and was supported by the Lombard League?</h3>
+                <input type="text" class="input_space"></input>
+                <button class = "check">Check</button>
+                <p style="font-weight: bold;" class="second_answer"></p>
+                <!-- TODO: Add free response question here -->
+            </div>
+        </div>
+    </body>
+</html>

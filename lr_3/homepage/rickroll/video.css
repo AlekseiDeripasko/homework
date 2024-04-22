@@ -1,0 +1,22 @@
+#video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#video video {
+    width: 100%;
+}
+
+p{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+#video-bg{
+    margin-left: 125px;
+}
+body{
+    background-color: black;
+}

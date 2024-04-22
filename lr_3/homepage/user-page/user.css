@@ -1,0 +1,110 @@
+
+.workspace{
+    display: inline-block;
+    width: 50vw;
+    height: 100vh;
+    background-image: url('bg-cards.jpg');
+
+        /* Позволяет изображению заполнять всю доступную область */
+    background-size: cover;
+
+        /* Позволяет изображению занимать все доступное пространство, даже если размеры изображения меньше контейнера */
+    background-repeat: no-repeat;
+
+        /* Определяет, как изображение будет позиционироваться */
+    background-position: center;
+}
+
+.main-info{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+}
+
+#hello{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+
+
+#logo{
+    margin-top: 100px;
+    width: 50%;
+    border-radius:40%;
+}
+.user-statistic{
+    width: 30vw;
+    height: 100vh;
+    background-color: red;
+    display: inline-block;
+}
+.statistic{
+    width: 100%;
+    height: 50vh;
+    background-color:  #013220;
+    display: flex;
+}
+.workspace{
+    display: flex;
+    gap: 16px;
+    width: 70vw;
+    height: 100vh;
+    background-color: blue;
+    padding: 16px;
+}
+body{
+    display:flex;
+
+}
+.card{
+   display: inline-block;
+   height: 80vh;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+}
+
+#first-image{
+    clip-path: inset(60px 0 0);
+    clip-path: inset(0 0 -20px 0);
+    margin-top: 0px;
+}
+
+.statistics-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    width: 100%;
+}
+
+.statistics-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.statistics-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.statistics-table th,
+.statistics-table td {
+    padding: 8px;
+    border: 1px solid white;
+}
+
+.statistics-table th {
+    background-color: #555;
+}
